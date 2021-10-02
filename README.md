@@ -28,7 +28,8 @@ IPFS wasn't used for this project.
 
 ### General writeup
 
-- The contract address
+- Contract address - 0xce2501faCA1B5B500E5883E624dB9c34267682Eb (https://rinkeby.etherscan.io/address/0xce2501faca1b5b500e5883e624db9c34267682eb)
+- Txn ID - 0x9ff220093feeda063e153d63894dbff7ad146cc606d474c5bc802a2069eada69 (https://rinkeby.etherscan.io/tx/0x9ff220093feeda063e153d63894dbff7ad146cc606d474c5bc802a2069eada69)
 - Node version - v14.17.5
 - Truffle version - v4.1.14
 - Solidity version - v0.4.24
