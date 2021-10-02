@@ -6,19 +6,19 @@
 
 #### Activity Diagram
 
-![activity-diagram](images/Activity Diagram.drawio.png)
+![activity-diagram](./images/Activity_Diagram.png)
 
 #### Sequence Diagram
 
-![sequence-diagram](images/Sequence Diagram.drawio.png)
+![sequence-diagram](./images/Sequence_Diagram.png)
 
 #### State Diagram
 
-![state-diagram](images/State Diagram.drawio.png)
+![state-diagram](./images/State_Diagram.png)
 
 #### Class Diagram
 
-![class-diagram](images/Class Modelling.drawio.png)
+![class-diagram](./images/Class_Modelling.png)
 
 ### Libraries
 
