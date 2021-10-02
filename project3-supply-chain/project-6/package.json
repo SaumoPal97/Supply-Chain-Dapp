@@ -16,6 +16,6 @@
   "dependencies": {
     "fs": "0.0.1-security",
     "truffle-hdwallet-provider": "^1.0.17",
-    "web3": "^1.6.0"
+    "web3": "^0.20.7"
   }
 }
