@@ -10,7 +10,7 @@ import '../coffeeaccesscontrol/RetailerRole.sol';
 contract SupplyChain is Ownable, ConsumerRole, DistributorRole, FarmerRole, RetailerRole {
 
   // Define 'owner'
-  address owner;
+  // address owner;
 
   // Define a variable called 'upc' for Universal Product Code (UPC)
   uint  upc;
@@ -65,6 +65,7 @@ contract SupplyChain is Ownable, ConsumerRole, DistributorRole, FarmerRole, Reta
   event Packed(uint upc);
   event ForSale(uint upc);
   event Added(uint upc);
+  event Sold(uint upc);
   event Shipped(uint upc);
   event Received(uint upc);
   event Purchased(uint upc);
@@ -165,12 +166,13 @@ contract SupplyChain is Ownable, ConsumerRole, DistributorRole, FarmerRole, Reta
     // Add the new item as part of Harvest
     items[_upc].sku = sku;
     items[_upc].upc = _upc;
+    items[_upc].ownerID = _originFarmerID;
     items[_upc].originFarmerID = _originFarmerID;
     items[_upc].originFarmName = _originFarmName;
     items[_upc].originFarmInformation = _originFarmInformation;
     items[_upc].originFarmLatitude = _originFarmLatitude;
     items[_upc].originFarmLongitude = _originFarmLongitude;
-    items[_upc].productID = _productID;
+    items[_upc].productID = _upc + sku; // some combination of upc and sku
     items[_upc].productNotes = _productNotes;
     items[_upc].itemState = State.Harvested;
     // Increment sku

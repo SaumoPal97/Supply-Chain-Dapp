@@ -47,6 +47,6 @@ contract RetailerRole {
   // Define an internal function '_removeRetailer' to remove this role, called by 'removeRetailer'
   function _removeRetailer(address account) internal {
     retailers.remove(account);
-    emit RetailerRemoved(address);
+    emit RetailerRemoved(account);
   }
 }
