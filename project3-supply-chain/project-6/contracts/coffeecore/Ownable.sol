@@ -40,6 +40,13 @@ contract Ownable {
         _transferOwnership(newOwner);
     }
 
+    /// Define a function 'kill' if required
+    function kill() public {
+        if (msg.sender == origOwner) {
+        selfdestruct(origOwner);
+        }
+    } 
+
     /// Define an internal function to transfer ownership
     function _transferOwnership(address newOwner) internal {
         require(newOwner != address(0));
